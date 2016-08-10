@@ -141,21 +141,23 @@ img {
 .clearfix:after {
     clear: both;
 }
+/*Tags*/
 .tags {
   list-style: none;
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
   padding: 0;
 }
 
 .tags li {
-  float: left; 
+  float: left;
 }
 
 .tag {
-  background: #eee;
+  font: 15px/1.5 'PT Sans', serif;
+  background: #767676;
   border-radius: 3px 0 0 3px;
-  color: #999;
+  color: #FFFFFF;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -164,6 +166,10 @@ img {
   margin: 0 10px 10px 0;
   text-decoration: none;
   -webkit-transition: color 0.2s;
+}
+
+.tag-archive-font {
+  font-size: 13px;
 }
 
 .tag::before {
@@ -181,7 +187,7 @@ img {
 .tag::after {
   background: #fff;
   border-bottom: 13px solid transparent;
-  border-left: 10px solid #eee;
+  border-left: 10px solid #767676;
   border-top: 13px solid transparent;
   content: '';
   position: absolute;
@@ -190,12 +196,13 @@ img {
 }
 
 .tag:hover {
-  background-color: crimson;
+  background-color: #f05422;
   color: white;
+  text-decoration: none;
 }
 
 .tag:hover::after {
-   border-left-color: crimson; 
+  border-left-color: #f05422;
 }
 /*********************/
 /* LAYOUT / SECTIONS */
